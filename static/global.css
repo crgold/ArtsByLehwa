@@ -81,3 +81,11 @@ meter {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+/* create page wide, 12 col grid */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.875rem;
+    padding: 0 2rem;
+  }

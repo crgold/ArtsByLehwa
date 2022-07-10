@@ -4,9 +4,9 @@
 
 <script>
     import Nav from "../components/nav.svelte";
+    import Header from "../components/header.svelte";
 </script>
 
 <Nav/>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<Header/>
