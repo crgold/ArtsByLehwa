@@ -3,11 +3,11 @@
     import lehwaPNG from '../lib/lehwa.png';
 </script>
 
-<header class="wrapper">
-    <span id="span-grid-position">
-        <h1>MABUHAY!<br>I'M LEHWA <span id="text-gold">GOLD</span></h1>
-        <h2>painter <span id="text-red">/</span> digital artist</h2>
-    </span>
+<header>
+    <div class="header-text-container">
+        <h1>MABUHAY!<br>I'M LEHWA <span class="text-gold">GOLD</span></h1>
+        <h2>painter <span class="text-red">/</span> digital artist</h2>
+    </div>
 
     <picture>
         <source srcset="{lehwaWebP}" type="image/webp">
@@ -18,6 +18,8 @@
 
 <style>
     header {
+        display: flex;
+        justify-content: space-around;
         height: 31.25rem;
         background-color: #1B1D21;
         align-items: center;
@@ -35,22 +37,27 @@
         color: #FEF8F5;
     }
 
+    .header-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
     picture {
-        align-self: end;
-        grid-column: 10/13;
+        align-self: flex-end;
     }
 
-    #span-grid-position {
-        grid-column: 2/8;
+    picture img {
+        width: 25rem;
+        height: 25rem;
     }
 
-    #text-gold {
+    .text-gold {
         color: #ECAF1C;
     }
 
-    #text-red {
+    .text-red {
         color: #FF5858;
-
     }
 
 </style>
