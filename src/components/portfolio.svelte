@@ -1,6 +1,7 @@
 <script lang="ts">
     import { urlFor } from "../routes/index"
     export let painting: any;
+    //console.log("from port: " + JSON.stringify(painting[0]));
 </script>
 
 <section>
@@ -9,7 +10,9 @@
     </div>
     <div class="image-gallery">
         {#if painting}
-        <img src={urlFor(painting.image).url()} alt="" />
+            {#each painting[0].images as image}
+            <img class="gallery-img" src={urlFor(image).auto('format').url()} alt="" />
+            {/each}
         {/if}
     </div>
 </section>
@@ -33,4 +36,14 @@
         width: 14.375rem;
         border-bottom: 1px solid #ECAF1C;
         }
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.2rem;
+    }
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 </style>

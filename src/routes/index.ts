@@ -12,10 +12,11 @@ import sanityClient from '@sanity/client';
     const builder = imageUrlBuilder(client);
 
     export async function get() {
-        const data = await client.fetch(`*[_type == "gallery"]{"image": images[0].asset->}`);
+        //const data = await client.fetch(`*[_type == "gallery"]{"root": images[0], "image": images[0].asset->}`);
+        const data = await client.fetch(`*[_type == "gallery"]{images}`);
 
         if (data) {
-            console.log(data);
+            //console.log(data);
             return {
             status: 200,
             body: {
