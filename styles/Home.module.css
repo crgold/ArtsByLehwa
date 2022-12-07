@@ -1,5 +1,53 @@
+/* 
 .container {
-  padding: 0 2rem;
+
+}
+*/
+
+.navMenuMargin {
+  margin-left: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 31.25rem;
+  background-color: #1B1D21;
+  align-items: center;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
+}
+
+.header h1 {
+  font-size: 2.25rem;
+  color: #FEF8F5;
+}
+
+.header h2 {
+  font-size: 1.25rem;
+  color: #FEF8F5;
+}
+
+.headerTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.picture {
+  align-self: flex-end;
+}
+
+.picture img {
+  width: 25rem;
+  height: 25rem;
+}
+
+.textGold {
+  color: #ECAF1C;
+}
+
+.textRed {
+  color: #FF5858;
 }
 
 .main {
