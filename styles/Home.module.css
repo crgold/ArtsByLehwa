@@ -70,8 +70,9 @@
 
 .imageGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   grid-gap: 0.2rem;
+  /*grid-auto-rows: 15.625rem;*/
 }
 
 .galleryImg {

@@ -1,15 +1,32 @@
 import Head from "next/head";
 import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 import artistPic from "../public/lehwa.webp";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import { Playfair_Display, Montserrat } from "@next/font/google";
+import fsPromises from "fs/promises";
+import path from "path";
 import { GetStaticProps } from "next";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export default function Home() {
+type Props = {
+  images: {
+    width: number;
+    height: number;
+    public_id: string;
+  }[];
+};
+
+export default function Home({ images }: Props) {
+  const imageData: {
+    width: number;
+    height: number;
+    public_id: string;
+  }[] = images;
+  //imageData.map(image => console.log(image));
   return (
     <div className={playfair.className}>
       <Head>
@@ -70,62 +87,15 @@ export default function Home() {
             <h1>My Works</h1>
           </div>
           <div className={styles.imageGrid}>
-            <Image
-              className={styles.galleryImg}
-              src="https://source.unsplash.com/random/?city,night/1"
-              alt="The artist Lehwa Gold"
-              width={250}
-              height={250}
-            />
-            <Image
-              className={styles.galleryImg}
-              src="https://source.unsplash.com/random/?city,night/2"
-              alt="The artist Lehwa Gold"
-              width={250}
-              height={250}
-            />
-            <Image
-              className={styles.galleryImg}
-              src="https://source.unsplash.com/random/?city,night/3"
-              alt="The artist Lehwa Gold"
-              width={250}
-              height={250}
-            />
-            <Image
-              className={styles.galleryImg}
-              src="https://source.unsplash.com/random/?city,night/4"
-              alt="The artist Lehwa Gold"
-              width={250}
-              height={250}
-            />
-            <Image
-              className={styles.galleryImg}
-              src="https://source.unsplash.com/random/?city,night/5"
-              alt="The artist Lehwa Gold"
-              width={250}
-              height={250}
-            />
-            <Image
-              className={styles.galleryImg}
-              src="https://source.unsplash.com/random/?city,night/6"
-              alt="The artist Lehwa Gold"
-              width={250}
-              height={250}
-            />
-            <Image
-              className={styles.galleryImg}
-              src="https://source.unsplash.com/random/?city,night/7"
-              alt="The artist Lehwa Gold"
-              width={250}
-              height={250}
-            />
-            <Image
-              className={styles.galleryImg}
-              src="https://source.unsplash.com/random/?city,night/8"
-              alt="The artist Lehwa Gold"
-              width={250}
-              height={250}
-            />
+            {imageData.map((image, key) => (
+              <CldImage
+                className={styles.galleryImg}
+                key={key}
+                width={image.width}
+                height={image.height}
+                src={image.public_id}
+              />
+            ))}
           </div>
         </section>
       </main>
@@ -146,7 +116,20 @@ export default function Home() {
   );
 }
 
-export const getStaticProps : GetStaticProps = async () => {
+// fetch image data from file
+export const getStaticProps: GetStaticProps = async () => {
+  const filePath = path.join(process.cwd(), "images.json");
+  const jsonData = await fsPromises.readFile(filePath, "utf-8");
+  const imageData = JSON.parse(jsonData);
+
+  return {
+    props: imageData,
+  };
+};
+
+// function to call api and get image data from cloudinary
+
+/* export const getStaticProps : GetStaticProps = async () => {
   const results: JSON = await fetch(
     `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/resources/image`,
     {
@@ -162,3 +145,4 @@ export const getStaticProps : GetStaticProps = async () => {
     props: {},
   };
 };
+*/
