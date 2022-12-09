@@ -12,19 +12,19 @@
   display: flex;
   justify-content: space-around;
   height: 31.25rem;
-  background-color: #1B1D21;
+  background-color: #1b1d21;
   align-items: center;
   filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
 }
 
 .header h1 {
   font-size: 2.25rem;
-  color: #FEF8F5;
+  color: #fef8f5;
 }
 
 .header h2 {
   font-size: 1.25rem;
-  color: #FEF8F5;
+  color: #fef8f5;
 }
 
 .headerTextContainer {
@@ -43,21 +43,42 @@
 }
 
 .textGold {
-  color: #ECAF1C;
+  color: #ecaf1c;
 }
 
 .textRed {
-  color: #FF5858;
+  color: #ff5858;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.portfolioSection {
+  background-color: #1b1d21;
+}
+
+.portfolioTitle {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #1b1d21;
+  color: #fef8f5;
+  padding: 1rem 2rem;
+}
+
+.portfolioSection h1 {
+  font-size: 2rem;
+  width: 14.375rem;
+  border-bottom: 1px solid #ecaf1c;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0.2rem;
+}
+
+.galleryImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 0.1rem solid white;
 }
 
 .footer {
@@ -74,51 +95,6 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
@@ -157,7 +133,7 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .imageGrid {
     width: 100%;
     flex-direction: column;
   }
