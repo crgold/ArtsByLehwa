@@ -123,19 +123,32 @@
 
 .footer {
   display: flex;
-  padding: 2rem 0;
   border-top: 1px inset #ecaf1c;
-  justify-content: center;
-  align-items: center;
+  height: 250px;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+  padding: 1rem 2rem;
 }
 
 .footerTitle {
   color: #fef8f5;
-  padding: 1rem 2rem;
 }
 
 .footerTitle h1 {
   font-size: 2rem;
   width: 14.375rem;
   border-bottom: 1px solid #ecaf1c;
+}
+
+.socialmedia {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.socialIcons {
+  font-size: 2rem;
 }

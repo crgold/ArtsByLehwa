@@ -9,6 +9,8 @@ import { Playfair_Display, Montserrat } from "@next/font/google";
 import fsPromises from "fs/promises";
 import path from "path";
 import { GetStaticProps } from "next";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram, faArtstation} from '@fortawesome/free-brands-svg-icons'
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -111,7 +113,7 @@ export default function Home({ images }: Props) {
             width={400}
             height={400}
             />
-            <div className={styles.aboutBio}>
+            <div className={[styles.aboutBio] + " " + [montserrat.className]}>
               <p>Lehwa was born in the small town of Lugait in Misamis Oriental, Mindanao. She is a self-taught artist who creates both digital and traditional acrylic art. During the pandemic, she discovered her passion for art and has never looked back. Day after day, she goes from one work of art to the next, dreaming of what she will paint next, sleeping with a stylus in hand.</p>
               <br></br>
               <p>Sadly, growing up, she had to endure many hardships and abuses. Despite how painful this period of her life was, she is thankful for the hardships as they have helped her become a stronger person. She finds artistic inspiration in the stories of people with the courage to stand up for themselves. It is these stories, and her personal experiences, she often draws from when she puts her brush to canvas. She wants to inspire women to be strong. To connect with them through her art to let them know they are not alone and that we are all in this life together.</p>
@@ -123,8 +125,21 @@ export default function Home({ images }: Props) {
       </main>
 
       <footer className={styles.footer}>
-        <div className={styles.footerTitle}>
+        <div className={styles.footerLeft}>        
+          <div className={styles.footerTitle}>
             <h1>Let&apos;s Connect</h1>
+          </div>
+          <p>Taguig City, Metro Manila, Philippines</p>
+          <a href="mailto: artsbylehwa@gmail.com">artsbylehwa@gmail.com</a>
+          <div className={styles.socialmedia}>
+            <a href="https://www.facebook.com/ArtsByLehwa" target="_"><FontAwesomeIcon className={styles.socialIcons} icon={faFacebook} /></a>
+            <a href="https://www.instagram.com/artsbylehwa/" target="_"><FontAwesomeIcon className={styles.socialIcons} icon={faTwitter} /></a>
+            <a href="https://twitter.com/artsbylehwa" target="_"><FontAwesomeIcon className={styles.socialIcons} icon={faInstagram} /></a>
+            <a href="https://www.artstation.com/lehwagold" target="_"><FontAwesomeIcon className={styles.socialIcons} icon={faArtstation} /></a>
+          </div>
+        </div>
+        <div className={styles.footerRight}>        
+
         </div>
       </footer>
     </div>
