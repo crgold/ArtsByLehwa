@@ -43,15 +43,15 @@ export default function Home({ images }: Props) {
           <h1>Arts By Lehwa</h1>
           <ul>
             <li>
-              <Link href="/#">Portfolio</Link>
+              <Link href="#portfolio">Portfolio</Link>
             </li>
             <li>
-              <Link href="/#about" className={styles.navMenuMargin}>
+              <Link href="#about" className={styles.navMenuMargin}>
                 About Me
               </Link>
             </li>
             <li>
-              <Link href="/#contact" className={styles.navMenuMargin}>
+              <Link href="#contact" className={styles.navMenuMargin}>
                 Contact
               </Link>
             </li>
