@@ -117,6 +117,7 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   border-top: 1px inset #ecaf1c;
   height: 250px;
 }
@@ -149,9 +150,8 @@
 
 .copyright {
   text-align: center;
-  align-self: flex-end;
   font-size: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-top: 2rem;
 }
 
 .mobileNav {
@@ -231,5 +231,6 @@
  .copyright {
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-top: 1rem;
  }
 }
