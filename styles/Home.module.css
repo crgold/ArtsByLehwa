@@ -1,19 +1,14 @@
-/* 
-.container {
-
-}
-*/
-
 .navMenuMargin {
   margin-left: 1rem;
 }
 
 .header {
   display: flex;
-  justify-content: space-around;
   height: 31.25rem;
+  column-gap: 2rem;
   /* background-color: #1b1d21; */
   align-items: center;
+  padding-left: 2rem;
 }
 
 .header h1 {
@@ -117,7 +112,6 @@
 .aboutBio {
   display: flex;
   flex-direction: column;
-  max-height: 400px;
   overflow: auto;
 }
 
@@ -151,4 +145,91 @@
 
 .socialIcons {
   font-size: 2rem;
+}
+
+.copyright {
+  text-align: center;
+  align-self: flex-end;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.mobileNavItem {
+  text-align: center;
+}
+
+.mobileNavIcons {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+@media only screen and (max-width: 832px){
+  .aboutSection {
+    flex-direction: column;
+  }
+
+  .aboutBio {
+    margin-top: 1rem;
+    overflow: inherit;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 669px){
+  .header {
+    column-gap: 0;
+  }
+
+  .headerPicture {
+  width: 300px;
+  height: 300px;
+  }
+}
+
+@media only screen and (max-width: 425px){
+ .mobileNav {
+  display: flex;
+  position: fixed;
+  justify-content:space-around;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  height: 7rem;
+  width: 100%;
+  font-size: 1rem;
+  border-top: 1px solid #ecaf1c;
+ }
+
+ .nav {
+  display: none;
+ }
+
+ .footer {
+  flex-direction: column;
+  margin-bottom: 3rem;
+  align-items: center;
+  margin-bottom: 7rem;
+  border: none;
+ }
+
+ .footer a {
+  text-align: center;
+ }
+
+ .footerTitle {
+  text-align: center;
+  align-self: center;
+ }
+
+  .socialmedia {
+  justify-content: center;
+}
+
+ .copyright {
+  margin-left: 2rem;
+  margin-right: 2rem;
+ }
 }

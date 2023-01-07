@@ -5,6 +5,7 @@
 /* Global styling not a part of the rest */
 html {
   background-color: #1B1D21;
+  scroll-behavior: smooth;
 }
 
 /*

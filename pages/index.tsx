@@ -9,8 +9,9 @@ import { Playfair_Display, Montserrat } from "@next/font/google";
 import fsPromises from "fs/promises";
 import path from "path";
 import { GetStaticProps } from "next";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faInstagram, faArtstation} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faArtstation} from '@fortawesome/free-brands-svg-icons';
+import { faImage,faUser, faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -73,7 +74,6 @@ export default function Home({ images }: Props) {
             painter <span className={styles.textRed}>/</span> digital artist
           </h2>
         </div>
-
         <Image
           className={styles.headerPicture}
           src={artistPic}
@@ -87,7 +87,7 @@ export default function Home({ images }: Props) {
       <main>
         <section>
           <div className={styles.galleryTitle}>
-            <h1>My Works</h1>
+            <h1 id="portfolio">My Works</h1>
           </div>
           <div className={styles.imageGrid}>
             {imageData.map((image, key) => (
@@ -103,7 +103,7 @@ export default function Home({ images }: Props) {
         </section>
         <section>
           <div className={styles.aboutTitle}>
-            <h1>About Me</h1>
+            <h1 id="about">About Me</h1>
           </div>
           <div className={styles.aboutSection}>
             <Image
@@ -127,21 +127,45 @@ export default function Home({ images }: Props) {
       <footer className={styles.footer}>
         <div className={styles.footerLeft}>        
           <div className={styles.footerTitle}>
-            <h1>Let&apos;s Connect</h1>
+            <h1 id="contact">Let&apos;s Connect</h1>
           </div>
           <p>Taguig City, Metro Manila, Philippines</p>
           <a href="mailto: artsbylehwa@gmail.com">artsbylehwa@gmail.com</a>
           <div className={styles.socialmedia}>
-            <a href="https://www.facebook.com/ArtsByLehwa" target="_"><FontAwesomeIcon className={styles.socialIcons} icon={faFacebook} /></a>
-            <a href="https://www.instagram.com/artsbylehwa/" target="_"><FontAwesomeIcon className={styles.socialIcons} icon={faTwitter} /></a>
-            <a href="https://twitter.com/artsbylehwa" target="_"><FontAwesomeIcon className={styles.socialIcons} icon={faInstagram} /></a>
-            <a href="https://www.artstation.com/lehwagold" target="_"><FontAwesomeIcon className={styles.socialIcons} icon={faArtstation} /></a>
+            <a href="https://www.facebook.com/ArtsByLehwa" target="_blank" rel="noreferrer"><FontAwesomeIcon className={styles.socialIcons} icon={faFacebook} /></a>
+            <a href="https://www.instagram.com/artsbylehwa/" target="_blank" rel="noreferrer"><FontAwesomeIcon className={styles.socialIcons} icon={faTwitter} /></a>
+            <a href="https://twitter.com/artsbylehwa" target="_blank" rel="noreferrer"><FontAwesomeIcon className={styles.socialIcons} icon={faInstagram} /></a>
+            <a href="https://www.artstation.com/lehwagold" target="_blank" rel="noreferrer"><FontAwesomeIcon className={styles.socialIcons} icon={faArtstation} /></a>
           </div>
         </div>
         <div className={styles.footerRight}>        
 
         </div>
+        <p className={[montserrat.className] + " " + [styles.copyright]}>Arts By Lehwa - Copyright 2022 - Created by Christopher Gold</p>
       </footer>
+      <nav className={styles.mobileNav}>
+        <span className={styles.mobileNavItem}>
+          <a href="#portfolio">
+            <FontAwesomeIcon className={styles.mobileNavIcons} icon={faImage} />
+            <br></br>
+            Portfolio
+          </a>
+        </span>
+        <span className={styles.mobileNavItem}>
+          <a href="#about">
+            <FontAwesomeIcon className={styles.mobileNavIcons} icon={faUser} />
+            <br></br>
+            About
+          </a>
+        </span>
+        <span className={styles.mobileNavItem}>
+          <a href="#contact">
+            <FontAwesomeIcon className={styles.mobileNavIcons} icon={faPaperPlane} />
+            <br></br>
+            Contact
+          </a>
+        </span>
+      </nav>
     </div>
   );
 }
