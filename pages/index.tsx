@@ -114,9 +114,9 @@ export default function Home({ images }: Props) {
             height={400}
             />
             <div className={[styles.aboutBio] + " " + [montserrat.className]}>
-              <p>Lehwa was born in the small town of Lugait in Misamis Oriental, Mindanao. She is a self-taught artist who creates both digital and traditional acrylic art. During the pandemic, she discovered her passion for art and has never looked back. Day after day, she goes from one work of art to the next, dreaming of what she will paint next, sleeping with a stylus in hand.</p>
+              <p>Lehwa was born in the small town of Lugait in Misamis Oriental, Mindanao. She is a self-taught artist who creates both digital and traditional acrylic art. During the pandemic, she discovered her passion for art and has never looked back.</p>
               <br></br>
-              <p>Sadly, growing up, she had to endure many hardships and abuses. Despite how painful this period of her life was, she is thankful for the hardships as they have helped her become a stronger person. She finds artistic inspiration in the stories of people with the courage to stand up for themselves. It is these stories, and her personal experiences, she often draws from when she puts her brush to canvas. She wants to inspire women to be strong. To connect with them through her art to let them know they are not alone and that we are all in this life together.</p>
+              <p>Growing up, she had to endure many hardships and abuses. Despite how painful this period of her life was, she is thankful for the hardships as they have helped her become a stronger person. She finds artistic inspiration in the stories of people with the courage to stand up for themselves. It is these stories, and her personal experiences, she often draws from when she puts her brush to canvas. She wants to inspire women to be strong. To connect with them through her art to let them know they are not alone and that we are all in this life together.</p>
               <br></br>
               <p>According to her, &quot;As with life, being creative has no limit. If you can imagine it, you can create it&quot;. Her art has been exhibited in Art Show Philippines (Reinterpreting Religious Art. April 2022) as well as U.S. based Light Space & Time Gallery (&quot;All Women&quot; Art Exhibition 2022)</p>
             </div>
