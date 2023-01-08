@@ -91,6 +91,9 @@ export default function Home({ images }: Props) {
           alt="The artist Lehwa Gold"
           width={400}
           height={400}
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
           priority
         />
       </header>
@@ -107,6 +110,9 @@ export default function Home({ images }: Props) {
                 key={key}
                 width={image.width}
                 height={image.height}
+                sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
                 src={image.public_id}
                 alt={image.alt}
               />
@@ -124,6 +130,9 @@ export default function Home({ images }: Props) {
               alt="The artist Lehwa Gold creating the painting called Angel"
               width={400}
               height={400}
+              sizes="(max-width: 768px) 100vw,
+                     (max-width: 1200px) 50vw,
+                      33vw"
             />
             <div className={[styles.aboutBio] + " " + [montserrat.className]}>
               <p>
