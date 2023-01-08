@@ -8,7 +8,7 @@ config.autoAddCss = false
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-    <Component {...pageProps} />;
+    <Component {...pageProps} />
     <Analytics />
     </>
   )
