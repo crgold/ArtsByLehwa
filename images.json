@@ -3,72 +3,100 @@
     {
       "public_id": "facesDry_yuarx1",
       "width": 1469,
-      "height": 1174
+      "height": 1174,
+      "alt": "Acrylic painting of various faces of women combined to form a single shape on a pink backdrop",
+      "caption": "Faces of Women"
     },
     {
       "public_id": "modernDry_nsuyem",
       "width": 1461,
-      "height": 1159
+      "height": 1159,
+      "alt": "Acrylic painting of various faces of women combined to form a single shape on a blue backdrop with multiple gold lines criss-crossing in the background",
+      "caption": "Modern Women"
     },
     {
       "public_id": "nunDry_dipddc",
       "width": 1469,
-      "height": 1098
+      "height": 1098,
+      "alt": "Acrylic painting of various faces of women dressed as nuns set on an orange background",
+      "caption": "Redemption and Simplicity"
     },
     {
       "public_id": "ninDry_vdqxqn",
       "width": 1447,
-      "height": 1145
+      "height": 1145,
+      "alt": "Acrylic painting of various faces of women dressed like Filipino natives set on an orange background",
+      "caption": "Ninuno"
     },
     {
       "public_id": "necklaceDry_rfgo4p",
       "width": 1436,
-      "height": 963
+      "height": 963,
+      "alt": "Acrylic painting of various faces of women dressed in more modern attire with one in a hajab set on a green background with columns of gold diamonds",
+      "caption": "The Necklace"
     },
     {
       "public_id": "motherDry_ciwzag",
       "width": 1479,
-      "height": 981
+      "height": 981,
+      "alt": "Acrylic painting of a woman with rainbow colored hair holding a child wrapped in a green shaw set on a gold and beige background with several gold lines going across the beige areas",
+      "caption": "Mother"
     },
     {
       "public_id": "mushroomDry_upox4h",
       "width": 1461,
-      "height": 1086
+      "height": 1086,
+      "alt": "A landscape scene with various houses made of mushrooms dotting across a mountain range with the perspective of looking at it from upon a hill between two green trees under a canopy of leaves",
+      "caption": "Mushroom Village"
     },
     {
       "public_id": "seeYouDry_glzooa",
       "width": 1425,
-      "height": 1043
+      "height": 1043,
+      "alt": "Two sides of a woman's face combines to form a single face that looks directly at you in colors of green and yellow with a purple flower on the face of the woman on the left and a red flower on the cheek of the face on the right",
+      "caption": "I See You"
     },
     {
       "public_id": "flowersDry_hw1yz9",
       "width": 683,
-      "height": 1080
+      "height": 1080,
+      "alt": "Five red flowers set on a backdrop composed of red and green blocks checkered upon one another",
+      "caption": "Flowers"
     },
     {
       "public_id": "ab1cropped_tj5gtq",
       "width": 1461,
-      "height": 1088
+      "height": 1088,
+      "alt": "",
+      "caption": ""
     },
     {
       "public_id": "facesNeon_hopzon",
       "width": 1600,
-      "height": 1332
+      "height": 1332,
+      "alt": "An acrylic painting of various faces of women wearing modern clothing of various cultures set on a bright red and yellow background with yellow and red lucky clovers stamped across the background",
+      "caption": "Faces of Women Series"
     },
     {
       "public_id": "angelDry_zwwglj",
       "width": 1284,
-      "height": 1918
+      "height": 1918,
+      "alt": "An angel with brown feathery wings and orange hair prays in a green field under a canopy of pink lilies",
+      "caption": "Angel"
     },
     {
       "public_id": "vaginisPainting_x1shko",
       "width": 1371,
-      "height": 1839
+      "height": 1839,
+      "alt": "A fleshy colored creature with the head of a vagina and the body of a penis wears a green vest and sits on a yellow toilet set on a green background",
+      "caption": "Vaginis"
     },
     {
       "public_id": "beauty_s1dya6",
       "width": 1748,
-      "height": 1370
+      "height": 1370,
+      "alt": "The faces of four women form together wearing various designer items and flowery head dresses set in a salon setting with a red and black checkered floor covered in purses, bags, lipstick, and shoes",
+      "caption": "Beauty"
     }
   ]
 }
