@@ -30,6 +30,7 @@ type Props = {
     width: number;
     height: number;
     public_id: string;
+    alt: string;
   }[];
 };
 
@@ -38,8 +39,9 @@ export default function Home({ images }: Props) {
     width: number;
     height: number;
     public_id: string;
+    alt: string;
   }[] = images;
-  //imageData.map(image => console.log(image));
+  // imageData.map(image => console.log(image));
   return (
     <div className={playfair.className}>
       <Head>
@@ -75,7 +77,7 @@ export default function Home({ images }: Props) {
           }
         >
           <h1>
-            MABUHAY!
+            HELLO!
             <br />
             I&apos;M LEHWA <span className={styles.textGold}>GOLD</span>
           </h1>
@@ -106,6 +108,7 @@ export default function Home({ images }: Props) {
                 width={image.width}
                 height={image.height}
                 src={image.public_id}
+                alt={image.alt}
               />
             ))}
           </div>
@@ -208,6 +211,7 @@ export default function Home({ images }: Props) {
         <p className={[montserrat.className] + " " + [styles.copyright]}>
           Arts By Lehwa - Copyright 2022 - Created by{" "}
           <a
+            className={styles.copyrightLinkColor}
             href="https://www.linkedin.com/in/crgold/"
             target="_blank"
             rel="noreferrer"
