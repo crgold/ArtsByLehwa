@@ -43,13 +43,13 @@ export default function Home({ images }: Props) {
   return (
     <div className={playfair.className}>
       <Head>
-        <title>Lehwa Gold</title>
+        <title>Arts By Lehwa</title>
         <meta name="description" content="Lehwa Gold's Art Portfolio" />
       </Head>
 
       <header>
         <nav className={styles.nav}>
-          <h1>Lehwa Gold</h1>
+          <h1>Arts By Lehwa</h1>
           <ul>
             <li>
               <Link href="#portfolio">Portfolio</Link>
