@@ -180,23 +180,3 @@ export const getStaticProps: GetStaticProps = async () => {
     props: imageData,
   };
 };
-
-// function to call api and get image data from cloudinary
-
-/* export const getStaticProps : GetStaticProps = async () => {
-  const results: JSON = await fetch(
-    `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/resources/image`,
-    {
-      headers: {
-        Authorization: `Basic ${Buffer.from(
-          process.env.CLOUDINARY_API + ":" + process.env.CLOUDINARY_SECRET
-        ).toString("base64")}`,
-      },
-    }
-  ).then((r) => r.json());
-  console.log("results", results);
-  return {
-    props: {},
-  };
-};
-*/
