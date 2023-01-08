@@ -205,10 +205,9 @@ export default function Home({ images }: Props) {
           </div>
         </div>
         <div className={styles.footerRight}></div>
-        <p className={montserrat.className}>
+        <p className={[montserrat.className] + " " + [styles.copyright]}>
           Arts By Lehwa - Copyright 2022 - Created by{" "}
           <a
-            className={styles.copyrightLinkColor}
             href="https://www.linkedin.com/in/crgold/"
             target="_blank"
             rel="noreferrer"
