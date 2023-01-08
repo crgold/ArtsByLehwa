@@ -6,7 +6,7 @@
   display: flex;
   height: 31.25rem;
   column-gap: 2rem;
-  /* background-color: #1b1d21; */
+  justify-content: space-around;
   align-items: center;
   padding-left: 2rem;
 }
