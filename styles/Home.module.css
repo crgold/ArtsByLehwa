@@ -158,6 +158,10 @@
   color: #fef8f5;
 }
 
+.copyrightLinkColor {
+  color: #ecaf1c;
+}
+
 .mobileNav {
   display: none;
 }
@@ -171,7 +175,7 @@
   margin-bottom: 0.6rem;
 }
 
-@media only screen and (max-width: 832px){
+@media only screen and (max-width: 832px) {
   .aboutSection {
     flex-direction: column;
   }
@@ -182,7 +186,7 @@
   }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 549px){
+@media only screen and (min-width: 425px) and (max-width: 549px) {
   .header {
     column-gap: 0;
     flex-direction: column;
@@ -191,9 +195,9 @@
   }
 
   .headerPicture {
-  width: 300px;
-  height: 300px;
-  align-self: center;
+    width: 300px;
+    height: 300px;
+    align-self: center;
   }
 
   .aboutSection {
@@ -202,7 +206,7 @@
   }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) {
   .header {
     column-gap: 0;
     flex-direction: column;
@@ -225,49 +229,49 @@
     width: 90vw;
     height: 35vh;
   }
- 
+
   .mobileNav {
-  display: flex;
-  position: fixed;
-  justify-content:space-around;
-  left: 0px;
-  bottom: 0px;
-  z-index: 1;
-  height: 7rem;
-  width: 100%;
-  font-size: 1rem;
-  border-top: 1px solid #ecaf1c;
-  color: #fef8f5;
- }
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    height: 7rem;
+    width: 100%;
+    font-size: 1rem;
+    border-top: 1px solid #ecaf1c;
+    color: #fef8f5;
+  }
 
- .nav {
-  display: none;
- }
+  .nav {
+    display: none;
+  }
 
- .footer {
-  flex-direction: column;
-  margin-bottom: 3rem;
-  align-items: center;
-  margin-bottom: 7rem;
-  border: none;
- }
+  .footer {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    align-items: center;
+    margin-bottom: 7rem;
+    border: none;
+  }
 
- .footer a {
-  text-align: center;
- }
+  .footer a {
+    text-align: center;
+  }
 
- .footerTitle {
-  text-align: center;
-  align-self: center;
- }
+  .footerTitle {
+    text-align: center;
+    align-self: center;
+  }
 
   .socialmedia {
-  justify-content: center;
-}
+    justify-content: center;
+  }
 
- .copyright {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 1rem;
- }
+  .copyright {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+  }
 }
