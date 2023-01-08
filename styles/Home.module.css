@@ -113,6 +113,7 @@
   display: flex;
   flex-direction: column;
   overflow: auto;
+  color: #fef8f5;
 }
 
 .footer {
@@ -127,6 +128,7 @@
   flex-direction: column;
   row-gap: 0.8rem;
   padding: 1rem 2rem;
+  color: #fef8f5;
 }
 
 .footerTitle {
@@ -146,12 +148,14 @@
 
 .socialIcons {
   font-size: 2rem;
+  color: #fef8f5;
 }
 
 .copyright {
   text-align: center;
   font-size: 0.8rem;
   margin-top: 2rem;
+  color: #fef8f5;
 }
 
 .mobileNav {
@@ -201,6 +205,7 @@
   width: 100%;
   font-size: 1rem;
   border-top: 1px solid #ecaf1c;
+  color: #fef8f5;
  }
 
  .nav {
