@@ -186,11 +186,19 @@
   .header {
     column-gap: 0;
     flex-direction: column;
+    text-align: center;
+    padding: 0;
   }
 
   .headerPicture {
   width: 300px;
   height: 300px;
+  align-self: center;
+  }
+
+  .aboutSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -198,11 +206,24 @@
   .header {
     column-gap: 0;
     flex-direction: column;
+    text-align: center;
+    padding: 0;
   }
 
   .headerPicture {
     width: 300px;
     height: 300px;
+    align-self: center;
+  }
+
+  .aboutSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .aboutPicture {
+    width: 90vw;
+    height: 35vh;
   }
  
   .mobileNav {
