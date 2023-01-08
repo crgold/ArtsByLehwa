@@ -156,6 +156,7 @@
   font-size: 0.8rem;
   margin-top: 2rem;
   color: #fef8f5;
+  line-height: 1.6em; /* on mobile view this will make copyright text look less cramped */
 }
 
 .copyrightLinkColor {
