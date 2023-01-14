@@ -250,7 +250,7 @@ export default function Home({ images }: Props) {
           </a>
         </span>
         <span className={[styles.mobileNavItem] + " " + [styles.gold]}>
-          <a href="https://drybrush.com/artists/lehwa-gold">
+          <a href="https://drybrush.com/artists/lehwa-gold" target="_blank" rel="noreferrer">
             <FontAwesomeIcon
               className={styles.mobileNavIcons}
               icon={faFaceSmileBeam}
