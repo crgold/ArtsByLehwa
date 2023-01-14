@@ -20,6 +20,7 @@ import {
   faImage,
   faUser,
   faPaperPlane,
+  faFaceSmileBeam,
 } from "@fortawesome/free-regular-svg-icons";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
@@ -246,6 +247,16 @@ export default function Home({ images }: Props) {
             />
             <br></br>
             Contact
+          </a>
+        </span>
+        <span className={[styles.mobileNavItem] + " " + [styles.gold]}>
+          <a href="https://drybrush.com/artists/lehwa-gold">
+            <FontAwesomeIcon
+              className={styles.mobileNavIcons}
+              icon={faFaceSmileBeam}
+            />
+            <br></br>
+            Purchase
           </a>
         </span>
       </nav>
