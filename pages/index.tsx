@@ -50,7 +50,7 @@ export default function Home({ images }: Props) {
       </Head>
 
       <header>
-        <nav className={styles.nav}>
+        <nav className={[styles.nav] + " " + [styles.sticky]}>
           <h1>Arts By Lehwa</h1>
           <ul>
             <li>
@@ -64,6 +64,11 @@ export default function Home({ images }: Props) {
             <li>
               <Link href="#contact" className={styles.navMenuMargin}>
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link href="https://drybrush.com/artists/lehwa-gold" target="_blank" rel="noreferrer" className={[styles.navMenuMargin] + " " + [styles.gold]}>
+                Purchase
               </Link>
             </li>
           </ul>
@@ -136,30 +141,19 @@ export default function Home({ images }: Props) {
             />
             <div className={[styles.aboutBio] + " " + [montserrat.className]}>
               <p>
-                Lehwa was born in the small town of Lugait in Misamis Oriental,
-                Mindanao. She is a self-taught artist who creates both digital
-                and traditional acrylic art. During the pandemic, she discovered
-                her passion for art and has never looked back.
+              Lehwa is a Filipina who paints from her heart. She loves to paint surrealist artworks using tetradic pallets to create warm, bright paintings.
               </p>
               <br></br>
               <p>
-                Growing up, she had to endure many hardships and abuses. Despite
-                how painful this period of her life was, she is thankful for the
-                hardships as they have helped her become a stronger person. She
-                finds artistic inspiration in the stories of people with the
-                courage to stand up for themselves. It is these stories, and her
-                personal experiences, she often draws from when she puts her
-                brush to canvas. She wants to inspire women to be strong. To
-                connect with them through her art to let them know they are not
-                alone and that we are all in this life together.
+              When the pandemic hit, finding herself unable to go outside for several months, she found an escape through art. She began to express her emotions through painting and a joy in interpreting her artwork to give it a deeper meaning. Sometimes, she thinks of a message and paints it. Just like her &quot;Repentance and Simplicity&quot; and &quot;I See You.&quot; Other times, she paints directly from her heart.
               </p>
               <br></br>
               <p>
-                According to her, &quot;As with life, being creative has no
-                limit. If you can imagine it, you can create it&quot;. Her art
-                has been exhibited in Art Show Philippines (Reinterpreting
-                Religious Art. April 2022) as well as U.S. based Light Space &
-                Time Gallery (&quot;All Women&quot; Art Exhibition 2022)
+              Lehwa did not have formal education. Her hunger for learning has led her to take online education programs and read books to improve herself. She is grateful for what she has been through in her life, both good and bad. To her, these experiences are lessons that she can carry throughout the journey of her existence. These experiences are also her inspirations to create her paintings. She hopes others can relate to her work and feel inspired, as she finds nothing more rewarding than lifting others that may be in a dark place as she once was.
+              </p>
+              <br></br>
+              <p>
+                Her art has been exhibited in Art Show Philippines as well as U.S. based Light Space & Time Gallery. Her artwork can be purchased at <a href="https://drybrush.com/artists/lehwa-gold" target="_blank" rel="noreferrer" className={styles.gold}>Drybrush Art Gallery</a>.
               </p>
             </div>
           </div>
@@ -220,7 +214,7 @@ export default function Home({ images }: Props) {
         <p className={[montserrat.className] + " " + [styles.copyright]}>
           Arts By Lehwa - Copyright 2022 - Created by{" "}
           <a
-            className={styles.copyrightLinkColor}
+            className={styles.gold}
             href="https://www.linkedin.com/in/crgold/"
             target="_blank"
             rel="noreferrer"
