@@ -106,7 +106,6 @@ nav {
   background-color: #202020;
   height: 64px;
   filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
-  position: sticky;
 }
 
 nav h1 {

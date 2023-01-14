@@ -1,3 +1,14 @@
+.gold {
+  color: #ecaf1c;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 .navMenuMargin {
   margin-left: 1rem;
 }
@@ -9,6 +20,7 @@
   justify-content: space-around;
   align-items: center;
   padding-left: 2rem;
+  margin-top: 64px;
 }
 
 .header h1 {
@@ -157,10 +169,6 @@
   margin-top: 2rem;
   color: #fef8f5;
   line-height: 1.6em; /* on mobile view this will make copyright text look less cramped */
-}
-
-.copyrightLinkColor {
-  color: #ecaf1c;
 }
 
 .mobileNav {
