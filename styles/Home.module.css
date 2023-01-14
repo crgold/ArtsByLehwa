@@ -217,6 +217,7 @@
 
 @media only screen and (max-width: 425px) {
   .header {
+    margin-top: 0;
     column-gap: 0;
     flex-direction: column;
     text-align: center;
