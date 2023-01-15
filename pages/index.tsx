@@ -180,7 +180,7 @@ export default function Home({ images }: Props) {
               />
             </a>
             <a
-              href="https://www.instagram.com/artsbylehwa/"
+              href="https://twitter.com/artsbylehwa"
               target="_blank"
               rel="noreferrer"
             >
@@ -190,7 +190,7 @@ export default function Home({ images }: Props) {
               />
             </a>
             <a
-              href="https://twitter.com/artsbylehwa"
+              href="https://www.instagram.com/artsbylehwa/"
               target="_blank"
               rel="noreferrer"
             >
