@@ -46,13 +46,13 @@ export default function Home({ images }: Props) {
   return (
     <div className={playfair.className}>
       <Head>
-        <title>Arts By Lehwa</title>
+        <title>Lehwa Gold</title>
         <meta name="description" content="Lehwa Gold's Art Portfolio" />
       </Head>
 
       <header>
         <nav className={[styles.nav] + " " + [styles.sticky]}>
-          <h1>Arts By Lehwa</h1>
+          <h1>Lehwa Gold</h1>
           <ul>
             <li>
               <Link href="#portfolio">Portfolio</Link>
@@ -142,7 +142,7 @@ export default function Home({ images }: Props) {
             />
             <div className={[styles.aboutBio] + " " + [montserrat.className]}>
               <p>
-              Lehwa is a Filipina who paints from her heart. She loves to paint surrealist artworks using tetradic pallets to create warm, bright paintings.
+              Lehwa is a Filipina who paints from her heart. She loves to paint surrealist artworks using bold pallets to create warm, bright paintings.
               </p>
               <br></br>
               <p>
