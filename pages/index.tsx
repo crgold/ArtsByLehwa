@@ -83,9 +83,7 @@ export default function Home({ images }: Props) {
           }
         >
           <h1>
-            HELLO!
-            <br />
-            I&apos;M LEHWA <span className={styles.textGold}>GOLD</span>
+            LEHWA <span className={styles.textGold}>GOLD</span>
           </h1>
           <h2>
             painter <span className={styles.textRed}>/</span> digital artist
@@ -107,7 +105,7 @@ export default function Home({ images }: Props) {
       <main>
         <section>
           <div className={styles.galleryTitle}>
-            <h1 id="portfolio">My Works</h1>
+            <h1 id="portfolio">Works</h1>
           </div>
           <div className={styles.imageGrid}>
             {imageData.map((image, key) => (
