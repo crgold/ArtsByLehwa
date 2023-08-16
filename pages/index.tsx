@@ -140,19 +140,19 @@ export default function Home({ images }: Props) {
             />
             <div className={[styles.aboutBio] + " " + [montserrat.className]}>
               <p>
-                Lehwa Abad Mago-Gold, a talented Filipina artist, possesses a great passion for painting that emanates from the depths of her heart. Through her vivid brushstrokes and bold color choices, she brings to life vibrant artworks that capture the essence of her artistic vision.
+                Lehwa Abad Mago-Gold, a talented Filipina artist, possesses a great passion for painting that emanates from the depths of her heart. Through her vivid brushstrokes and bold color choices, she brings vibrant artworks to life that capture the essence of her artistic vision.
               </p>
               <br></br>
               <p>
-              In the face of the global pandemic that brought a long confinement, Lehwa found solace and refuge in the world of art. Secluded from the outside world for months on end, she turned to painting as a means of expressing her emotions, unearthing a newfound joy in imbuing her artwork with significance.
+                In the face of the global pandemic that brought long confinement, Lehwa found solace and refuge in the world of art. Secluded from the outside world for months on end, she turned to painting as a means of expressing her emotions, unearthing newfound joy in imbuing her artwork with significance.
               </p>
               <br></br>
               <p>
-              There are instances when Lehwa envisions a specific message and skillfully brings it to life on her canvas. Works such as &quot;Repentance and Simplicity&quot; and &quot;I See You&quot; serve as prime examples of her intentional storytelling through art. However, there are also moments when she spontaneously paints from the depths of her being, allowing her emotions to guide each stroke of the brush.
+              Sometimes, Lehwa envisions a specific message and skillfully brings it to life on her canvas, as seen in works such as &quot;Repentance and Simplicity&quot; and &quot;I See You.&quot; However, there are also moments when she spontaneously paints from the depths of her being, allowing her emotions to guide each stroke of the brush.
               </p>
               <br></br>
               <p>
-              Despite her lack of formal education, Lehwa&apos;s insatiable thirst for knowledge pushed her to commence on online educational programs and continuously honing her skills and expanding her artistic repertoire. She wholeheartedly acknowledges the experiences, both positive and negative, that have shaped her life. To her, these encounters serve as invaluable lessons that she carries with her throughout her journey of existence. They also serve as inexhaustible wells of inspiration, fueling her artistic creations. Lehwa, hopes that others can resonate with her work and find inspiration within, for she believes that there is no greater reward than uplifting those who may find themselves in the same darkness she once experienced.
+              Despite lacking formal education, Lehwa&apos;s insatiable thirst for knowledge led her to commence online educational programs and continuously hone her skills, expanding her artistic repertoire. She wholeheartedly acknowledges the experiences, both positive and negative, that have shaped her life. To her, these encounters are invaluable lessons that she carries with her throughout her journey of existence. They also serve as inexhaustible wells of inspiration, fueling her artistic creations. Lehwa hopes that others can resonate with her work and find inspiration within, for she believes that there is no greater reward than uplifting those who may find themselves in the same darkness she once experienced.
               </p>
               <br></br>
               <p>
