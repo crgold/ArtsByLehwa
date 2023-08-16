@@ -140,19 +140,23 @@ export default function Home({ images }: Props) {
             />
             <div className={[styles.aboutBio] + " " + [montserrat.className]}>
               <p>
-              Lehwa is a Filipina who paints from her heart. She loves to paint surrealist artworks using bold pallets to create warm, bright paintings.
+                Lehwa Abad Mago-Gold, a talented Filipina artist, possesses a great passion for painting that emanates from the depths of her heart. Through her vivid brushstrokes and bold color choices, she brings to life vibrant artworks that capture the essence of her artistic vision.
               </p>
               <br></br>
               <p>
-              When the pandemic hit, finding herself unable to go outside for several months, she found an escape through art. She began to express her emotions through painting and a joy in interpreting her artwork to give it a deeper meaning. Sometimes, she thinks of a message and paints it. Just like her &quot;Repentance and Simplicity&quot; and &quot;I See You.&quot; Other times, she paints directly from her heart.
+              In the face of the global pandemic that brought a long confinement, Lehwa found solace and refuge in the world of art. Secluded from the outside world for months on end, she turned to painting as a means of expressing her emotions, unearthing a newfound joy in imbuing her artwork with significance.
               </p>
               <br></br>
               <p>
-              Lehwa did not have formal education. Her hunger for learning has led her to take online education programs and read books to improve herself. She is grateful for what she has been through in her life, both good and bad. To her, these experiences are lessons that she can carry throughout the journey of her existence. These experiences are also her inspirations to create her paintings. She hopes others can relate to her work and feel inspired, as she finds nothing more rewarding than lifting others that may be in a dark place as she once was.
+              There are instances when Lehwa envisions a specific message and skillfully brings it to life on her canvas. Works such as &quot;Repentance and Simplicity&quot; and &quot;I See You&quot; serve as prime examples of her intentional storytelling through art. However, there are also moments when she spontaneously paints from the depths of her being, allowing her emotions to guide each stroke of the brush.
               </p>
               <br></br>
               <p>
-                Her art has been exhibited in Art Show Philippines as well as U.S. based Light Space & Time Gallery. Her artwork can be purchased at <a href="https://drybrush.com/artists/lehwa-gold" target="_blank" rel="noreferrer" className={styles.gold}>Drybrush Art Gallery</a>.
+              Despite her lack of formal education, Lehwa&apos;s insatiable thirst for knowledge pushed her to commence on online educational programs and continuously honing her skills and expanding her artistic repertoire. She wholeheartedly acknowledges the experiences, both positive and negative, that have shaped her life. To her, these encounters serve as invaluable lessons that she carries with her throughout her journey of existence. They also serve as inexhaustible wells of inspiration, fueling her artistic creations. Lehwa, hopes that others can resonate with her work and find inspiration within, for she believes that there is no greater reward than uplifting those who may find themselves in the same darkness she once experienced.
+              </p>
+              <br></br>
+              <p>
+              In Lehwa&apos;s artistic endeavors, the brush becomes a conduit for emotional release, creativity, and connection. Her dedication to personal growth and her unwavering desire to touch the lives of others through her art exemplify the impact that art can have on both the artist and those who engage with it. Lehwa&apos;s vibrant paintings serve as a testament to the transformative power of artistic expression, expressing the beauty that lies within the human spirit.
               </p>
             </div>
           </div>

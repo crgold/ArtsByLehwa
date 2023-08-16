@@ -95,11 +95,10 @@
 }
 
 .aboutSection {
-  display: flex;
   align-items: center;
   background-color: #121212;
   padding-left: 2rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   padding-bottom: 1rem;
   column-gap: 2rem;
 }
@@ -119,12 +118,11 @@
 
 .aboutPicture {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+  float: left;
+  margin-right: 1.2rem;
 }
 
 .aboutBio {
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
   color: #fef8f5;
 }
 
@@ -184,12 +182,31 @@
   margin-bottom: 0.6rem;
 }
 
+@media only screen and (min-width: 1666px) {
+  .aboutSection {
+    display: flex;
+  }
+
+  .aboutPicture {
+    margin-right: 0rem;
+  }
+
+  .aboutBio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+
 @media only screen and (max-width: 832px) {
   .aboutSection {
+    display: flex;
     flex-direction: column;
   }
 
   .aboutBio {
+    display: flex;
+    flex-direction: column;
     margin-top: 1rem;
     overflow: inherit;
   }
@@ -210,8 +227,15 @@
   }
 
   .aboutSection {
+    display: flex;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .aboutBio {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
   }
 }
 
@@ -231,6 +255,7 @@
   }
 
   .aboutSection {
+    display: flex;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -238,6 +263,12 @@
   .aboutPicture {
     width: 90vw;
     height: 35vh;
+  }
+
+  .aboutBio {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
   }
 
   .mobileNav {
